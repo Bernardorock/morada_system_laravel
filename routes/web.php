@@ -3,10 +3,16 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Index;
 use App\Http\Controllers\Menu;
+use App\Http\Controllers\MenuRetratoController;
 
+//Página Inicial (index)
+Route::get('/',[Index::class, 'olaMundo'])->name('index');
 
-
-
-Route::get('/',[Index::class, 'olaMundo']);
+//Menu principal
 Route::get('/palavra-do-pastor',[Menu::class, 'palavraDoPastor'])->name('palavradopastor');
 Route::get('/eventos', [Menu::class, 'eventos'])->name('eventos');
+
+//Menu Retrato
+Route::get('/ler-as-escrituras',[MenuRetratoController::class, ('lerEscrituras')])->name('lerestcrituras');
+Route::get('adoracao',[MenuRetratoController::class, 'adoracao'])->name('adoracao');
+

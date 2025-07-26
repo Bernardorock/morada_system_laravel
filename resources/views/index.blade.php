@@ -47,12 +47,12 @@
     </div>
 </section>
 <div class="conteiner_retratos">
-    <a href="#" class="retrato">
+    <a href="{{route('lerestcrituras')}}" class="retrato">
         <img src="{{ asset('imagens/escrituras.jpg') }}" alt="Escrituras">
         <p>Porque devemos ler as escrituras?</p>
     </a>
 
-    <a href="#" class="retrato">
+    <a href="{{route('adoracao')}}" class="retrato">
         <img src="{{ asset('imagens/img6.jpg') }}" alt="Adoração">
         <p>O poder da adoração</p>
     </a>
