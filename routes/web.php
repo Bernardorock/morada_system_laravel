@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Index;
+use App\Http\Controllers\LeituraBiblia;
 use App\Http\Controllers\Menu;
 use App\Http\Controllers\MenuRetratoController;
 
@@ -15,4 +16,5 @@ Route::get('/eventos', [Menu::class, 'eventos'])->name('eventos');
 //Menu Retrato
 Route::get('/ler-as-escrituras',[MenuRetratoController::class, ('lerEscrituras')])->name('lerestcrituras');
 Route::get('adoracao',[MenuRetratoController::class, 'adoracao'])->name('adoracao');
+Route::get('/leitura-biblia', [LeituraBiblia::class, ('paginaLeitura')])->name('leiturabiblia');
 

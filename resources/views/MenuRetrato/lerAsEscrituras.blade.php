@@ -102,7 +102,7 @@ e            dessa gente nos protegerás para sempre.
         <br><em>“Desejai o genuíno leite espiritual...”</em> — <strong>1 Pedro 2:2</strong></p>
 
         <div class="text-center mt-5">
-          <a href="#leitura" class="btn btn-warning btn-lg fw-bold shadow">Comece sua leitura hoje!</a>
+          <a href="{{route('leiturabiblia')}}" class="btn btn-warning btn-lg fw-bold shadow">Comece sua leitura hoje!</a>
         </div>
 
       </div>
