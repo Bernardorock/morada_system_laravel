@@ -18,3 +18,6 @@ Route::get('/ler-as-escrituras',[MenuRetratoController::class, ('lerEscrituras')
 Route::get('adoracao',[MenuRetratoController::class, 'adoracao'])->name('adoracao');
 Route::get('/leitura-biblia', [LeituraBiblia::class, ('paginaLeitura')])->name('leiturabiblia');
 
+//mostrar livro
+Route::POST('/ver-livro',[LeituraBiblia::class, ('escolhaLivro')])->name('lerlivro');
+
