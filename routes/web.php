@@ -5,9 +5,13 @@ use App\Http\Controllers\Index;
 use App\Http\Controllers\LeituraBiblia;
 use App\Http\Controllers\Menu;
 use App\Http\Controllers\MenuRetratoController;
+use App\Http\Controllers\PaginaInicialController;
 
-//Página Inicial (index)
+//Página login (index)
 Route::get('/',[Index::class, 'olaMundo'])->name('index');
+
+//pagina inicial atenção Bernardo - precisa mexer depois aqui isso é momentaneo
+Route::get('/pagina-inicial',[PaginaInicialController::class, ('paginaInicial')])->name('paginainicial');
 
 //Menu principal
 Route::get('/palavra-do-pastor',[Menu::class, 'palavraDoPastor'])->name('palavradopastor');

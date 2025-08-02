@@ -35,7 +35,7 @@ class LeituraBiblia extends Controller
         ['textos'=> $textos]
     );
         }catch(Exception $e){
-            echo 'Erro de Requisição ' . $e->getMessage();
+            echo 'Erro de Requisição. Talvez seu capítulo não exista  ' . $e->getMessage();
         }
     }
 }

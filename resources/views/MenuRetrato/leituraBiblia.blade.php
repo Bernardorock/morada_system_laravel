@@ -22,7 +22,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="{{route('index')}}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('paginainicial')}}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Bibliotecas</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('palavradopastor')}}">Palavra do Pastor</a></li>
